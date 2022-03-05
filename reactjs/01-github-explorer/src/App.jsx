@@ -1,4 +1,5 @@
 import { useEffect, useState}  from "react"
+import "./styles/global.scss"
 
 const COUNTDOWN_INITIAL_TIME_IN_SECONDS = 25 * 60;
 
@@ -20,9 +21,10 @@ export function App() {
 
     return (
         <div>
-            <span>{toString(minutes).padStart(2, '0')}</span>
+            <h1>Test {minutes} {seconds}</h1>
+            <span>{String(minutes).padStart(2, '0')}</span>
             <span>:</span>
-            <span>{toString(seconds).padStart(2, '0')}</span>
+            <span>{String(seconds).padStart(2, '0')}</span>
         </div>
     )
 }
