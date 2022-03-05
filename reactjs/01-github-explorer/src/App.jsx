@@ -20,9 +20,9 @@ export function App() {
 
     return (
         <div>
-            <span>{String(minutes).padStart(2, '0')}</span>
+            <span>{toString(minutes).padStart(2, '0')}</span>
             <span>:</span>
-            <span>{String(seconds).padStart(2, '0')}</span>
+            <span>{toString(seconds).padStart(2, '0')}</span>
         </div>
     )
 }
